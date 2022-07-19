@@ -129,6 +129,11 @@ img{
 .content-body{
     font-weight: 600;
 }
+.content-body a{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
 .match-content{
     display: grid;
     grid-template-columns: 300px auto;
@@ -152,6 +157,7 @@ img{
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
 }
 .content-footer span{
     margin-right: 10px;
