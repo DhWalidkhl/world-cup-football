@@ -212,6 +212,19 @@ footer ul li a{
     font-size: 15px;
 }
 
+.social-icon{
+    font-size: 13px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.social-icon span{
+    margin-right: 10px;
+}
+.social-icon a{
+    padding: 0 8px;
+    color: white;
+}
+
 /* -------------------------
     Footer Section Css end
 -----------------------------*/
@@ -245,10 +258,25 @@ footer ul li a{
         align-items: center;
         text-align: center;
     }
+    footer{
+        text-align: center;
+    }
     footer ul{
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+    }
+    footer ul li{
+        padding: 15px 0;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icon a{
+        padding: 10px 0;
     }
     
 }
