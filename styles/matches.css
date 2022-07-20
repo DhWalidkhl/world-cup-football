@@ -1,0 +1,308 @@
+
+/* -------------------------
+    Default Css Start
+-----------------------------*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1200px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+.btn-primary{
+    padding: 15px 30px;
+    background: #dd0000;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 20px;
+}
+.btn-primary-white{
+    padding: 15px 30px;
+    background: white;
+    color: black !important;
+    font-weight: 600;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid #aaa9a9;
+}
+
+.btn-primary span{
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+/* -------------------------
+    Default Css end
+-----------------------------*/
+
+
+/* -------------------------
+    Banner section Css Start
+-----------------------------*/
+
+.banner{
+    background: black;
+    border-radius: 20px;
+}
+.banner-info{
+    padding: 0 70px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-right: 10px;
+    color: white;
+}
+
+.banner-info h1{
+    font-size: 4.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.banner-info p{
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.banner-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-img{
+    text-align: center;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+/* -------------------------
+    Banner Section Css end
+-----------------------------*/
+
+
+
+
+/* -------------------------
+    Middle Section Css Start
+-----------------------------*/
+.middle{
+    margin: 50px 0;
+}
+#magic-btn{
+    text-align: center;
+    margin: 35px;
+    display: none;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+    text-align: center;  
+    justify-content: center;
+    padding: 10px;
+}
+.content-left a{
+    color: white;
+    margin: 15px 0;
+}
+.content-body{
+    font-weight: 600;
+}
+.content-body a{
+    
+}
+.match-content{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.content-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-body a{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.content-body{
+    padding: 15px;
+    text-align: center;
+}
+.content-footer{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.content-footer span{
+    margin-right: 10px;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.blogs{
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 30px 20px;
+    width: auto;
+    height: 140px;
+}
+
+/* -------------------------
+    Middle section Css end
+-----------------------------*/
+
+
+
+/* -------------------------
+    Footer Section Css Start
+-----------------------------*/
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 30px 0;
+}
+footer h1{}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    padding: 0 30px;
+}
+footer ul li a{
+    color: white;
+    font-size: 15px;
+}
+
+/* -------------------------
+    Footer Section Css end
+-----------------------------*/
+
+/* -------------------------
+   Responsive Css start
+-----------------------------*/
+
+
+/* Mobile devices css start */
+
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-content{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+    .match-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content-left{
+        background: white;
+    }
+    .content-right{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+    footer ul{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+/* Mobile devices css end */
+
+/* Tablet Devices css start */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #magic-btn{
+        display: inline-block;
+        justify-content: center;
+    }
+    .match-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content-left{
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+    }
+    .content-left a{
+        padding: 5px;
+        margin: 30px 10px;
+    }
+    .content-right{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+   
+    footer ul{
+        flex-wrap: wrap;
+        
+    }
+}
+/* tablet devices css end */
+
+
+/* -------------------------
+   Responsive Css end
+-----------------------------*/
+
+
+
+ 
+    /* ----------------------------
+        Thanks For watching 
+    --------------------------------*/
+
+
+
