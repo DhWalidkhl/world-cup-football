@@ -97,6 +97,10 @@ img{
 
 /* Image Animation css start */
 
+#innerimage{
+    position: relative;
+}
+
 #innerimage {
     -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
