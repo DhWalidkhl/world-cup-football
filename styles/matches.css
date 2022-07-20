@@ -96,6 +96,31 @@ img{
     width: 100%;
 }
 
+#innerimage{
+    position: relative;
+}
+
+/* Image Animation css start */
+
+#innerimage {
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+    animation-iteration-count: infinite;
+}
+@keyframes fadein {
+    0% {opacity: 0;}
+    10% {opacity: .1;}
+    20% {opacity: .2;}
+    25% {opacity: .3}
+    50% {opacity: .4;}
+    60% {opacity: .6;}
+    70% {opacity: .7;}
+    85% {opacity: .8;}
+    100% {opacity: 1;}
+}
+
+/* Image Animation end */
+
 /* -------------------------
     Banner Section Css end
 -----------------------------*/
